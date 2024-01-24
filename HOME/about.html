@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon"  type="image/x-icon" href="quiz.png">
+    <title>Quiz. - Home</title>
+</head>
+<body>
+    <section class="hero">
+        <div class="heading">
+            <h1>About Us</h1>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome to Our Website</h2>
+                <p>Dive into the captivating world of Quiz. , where knowledge meets entertainment! Our quiz app is designed to engage and challenge users across a spectrum of topics, fostering curiosity and learning in a fun and interactive way. Whether you're a trivia enthusiast or a casual player, embark on a journey of discovery with us. Join our vibrant community and elevate your quiz experience to new heights!</p>
+                <button class="cta-button learnmore">Learn More</button>
+            </div>
+            <div class="hero-image">
+                <img src="quiz-.jpg" alt="quiz app">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const learnMoreButton = document.querySelector('.learnmore');
+
+        learnMoreButton.addEventListener('click', function() {
+            const userConfirmation = confirm('Do you want to learn more?');
+            if (userConfirmation) {
+            window.location.href = 'https://en.wikipedia.org/wiki/Quiz';
+        } 
+        });
+   </script>
+</body>
+</html>
